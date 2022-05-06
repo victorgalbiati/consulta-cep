@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CEP</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Consulta CEP</h2>
+        <form>
+            <div class="info">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" maxlength="8">
+            </div>
+            <div class="info">
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" id="rua" disabled>
+            </div>
+            <div class="info">
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" disabled>
+            </div>
+            <div class="info">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" disabled>
+            </div>
+            <div class="info">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" disabled>
+            </div>
+            <button class="new-consult" type="reset">Nova consulta</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="consulta.js"></script>
+</body>
+</html>

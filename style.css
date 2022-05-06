@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #001763, #1a08c2);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    margin-bottom: 0.7rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    background: #FFF;
+    border-radius: 8px;
+    height: auto;
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.2)
+;
+}
+
+.info {
+    margin-bottom: 12px;
+}
+
+.info, .info-cep label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+}
+
+.info input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 25px;
+    font-size: 1.2rem;
+}
+
+
+.new-consult {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(45deg, #001763, #1a08c2);
+	background-color:#599bb3;
+	border-radius:10px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Poppins;
+	font-size:15px;
+	padding:8px 10px;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.new-consult {
+    margin-left: 135px;
+    margin-top: 10px;
+}
+
+.consult:hover, .new-consult:hover {
+	background:linear-gradient(to bottom, #001763 5%, #1a08c2 100%);
+	background-color:#1a08c2;
+}
+
+
+@media only screen and (max-width: 950px){
+    .container{
+        width: 250px;
+    }
+    .info-cep input {
+        width: 115px;
+    }
+    .new-consult {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 10px;
+        padding: 8px 5px;
+    }
+}
